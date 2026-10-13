@@ -1,77 +1,19 @@
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #685d5d;
-}
-
-form {
-  width: 300px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-/* Adicionando estilos para o formulário de login */
-#loginDiv {
-  display: none;
-  width: 300px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-
-/* Adicione ao seu arquivo style.css */
-
-#userInfo {
-  display: none;
-  width: 300px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-
-#userInfo h2 {
-  color: #333;
-}
-
-#userInfo p {
-  margin: 10px 0;
-}
-
-#userInfo span {
-  font-weight: bold;
-  color: #007bff; /* Cor azul para os valores do usuário */
-}
+* { box-sizing: border-box; }
+:root { font-family: system-ui, sans-serif; color: #203432; background: #ecf3ef; }
+body { margin: 0; min-height: 100vh; line-height: 1.6; background: radial-gradient(ellipse at top left, #d1e8dc, transparent 70%); }
+.shell { width: min(100% - 2rem, 520px); margin: auto; padding: 3rem 0; }
+h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; margin: .5rem 0; }
+h2 { font-size: 1.3rem; margin-top: 0; }
+.eyebrow { color: #306348; font-weight: 700; font-size: .8rem; letter-spacing: .09em; }
+.notice { border-left: 3px solid #457f60; padding-left: 1rem; font-size: .9rem; }
+.card { background: #fff; border: 1px solid #cbdacf; border-radius: 1.3rem; padding: clamp(1.25rem, 5vw, 2rem); box-shadow: 0 14px 45px #193b2410; }
+[hidden] { display: none !important; }
+label { display: block; font-weight: 600; margin: 1rem 0 .35rem; }
+input { width: 100%; font: inherit; padding: .8rem; border: 1px solid #7d9589; border-radius: .5rem; }
+button { display: block; width: 100%; margin-top: 1rem; padding: .85rem; font: inherit; font-weight: 700; border: 1px solid #23583b; border-radius: .5rem; background: #23583b; color: white; cursor: pointer; }
+button:hover { background: #183e2a; }
+.secondary { background: white; color: #23583b; }
+.secondary:hover { background: #e8f2ec; }
+:focus-visible { outline: 3px solid #a65116; outline-offset: 3px; }
+.hint, #status { font-size: .9rem; } #status:empty { display: none; }
+#userInfo { overflow-wrap: anywhere; }
